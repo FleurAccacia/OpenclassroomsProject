@@ -26,15 +26,44 @@
 const listeMot=["Cachalot","Petunia","Serviette"]
 
 let score=0
+    
+const listePhrases=["Pas de panique","La vie, l'univers et le reste","Merci pour le poisson"]
 
-for(let cpt =0; cpt<0; cpt++){
-    let motEntree= prompt("Veuillez entrer :"+listeMot[cpt])
+let choix= prompt("Voulez vous une liste de mots ou de phrase ?")
 
-    if (motEntree===listeMot[cpt]){
-        score+=1
-    }
-        console.log("Votre score est : ",score)
+
+while(choix!=="mots" && choix!=="Phrases"){
+    prompt("Voulez vous une liste de mots ou de phrase ?")
+
 }
+
+if(choix==="mots"){
+    for(let cpt =0; cpt<3; cpt++){
+
+        let motEntree= prompt("Veuillez entrer :" +listeMot[cpt])
+    
+        if (motEntree===listeMot[cpt]){
+            score+=1
+        }
+    }
+    console.log("Votre score est : ",score) 
+}
+
+if(choix==="Phrases"){
+    for(let cpt =0; cpt<3; cpt++){
+
+        let motEntree= prompt("Veuillez entrer :" +listePhrases[cpt])
+    
+        if (motEntree===listePhrases[cpt]){
+            score+=1
+        }
+    }
+    console.log("Votre score est : ",score) 
+}
+
+
+
+
 
 // //cas1
 // let motEntree= prompt("Veuillez entrer :"+listeMot[0])
