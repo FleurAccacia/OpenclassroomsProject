@@ -1,9 +1,10 @@
 Apprentissage de JavaScript
 
 Hello!!!
+
 Ce dépôt rassemble mes fichiers d'apprentissage et de pratique en JavaScript. 
 
-Objectifs
+Objectifs:
 
 -Apprendre les fondamentaux de JavaScript.
 -Acquérir une bonne maîtrise des concepts clés du langage
